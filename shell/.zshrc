@@ -22,8 +22,6 @@ export WASMER_DIR="$HOME/.wasmer"
 
 # neomutt
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
-#alias neomutt='LANG=ja_JP.UTF-8 LC_CTYPE=ja_JP.UTF-8 neomutt'
-#alias mutt='LANG=ja_JP.UTF-8 LC_CTYPE=ja_JP.UTF-8 neomutt'
 
 alias neomutt='LC_CTYPE=ja_JP.UTF-8 neomutt'
 alias mutt='LC_CTYPE=ja_JP.UTF-8 neomutt'
