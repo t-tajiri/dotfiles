@@ -1,0 +1,65 @@
+# import color theme
+source ~/.mutt/monokai.muttrc
+# import account
+source ~/.mutt/account.muttrc
+
+set use_from = yes
+set envelope_from = yes
+
+set spoolfile = "+INBOX"
+set postponed ="+Drafts"
+set trash = "+Trash"
+set record = "+Sent"
+
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set certificate_file = ~/.mutt/certificates
+
+set move = no 
+set imap_keepalive = 900
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+mailboxes =INBOX =Sent =Trash =Drafts =Other
+
+# Sort by newest conversation first.
+set sort = reverse-threads
+set sort_aux = last-date-received
+
+auto_view text/plain
+alternative_order text/plain text/html text/enriched
+
+# Sidebar
+set sidebar_visible = yes
+set sidebar_width = 20
+set sidebar_short_path = yes
+set sidebar_next_new_wrap = yes
+set sidebar_delim_chars   = "/"
+set sidebar_indent_string = "  "
+set mail_check_stats
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/? %?S?%S?'
+
+# binding
+bind index,pager i noop
+bind index,pager g noop
+
+bind index G imap-fetch-mail
+
+bind index,pager,browser d half-down
+bind index,pager,browser u half-up
+
+bind index,pager \Ck sidebar-prev
+bind index,pager \Cj sidebar-next
+bind index,pager \CO sidebar-open
+bind index,pager \Cp sidebar-prev-new
+bind index,pager \Cn sidebar-next-new
+bind index,pager B sidebar-toggle-visible
+
+set editor='nvim'
+
+# charset
+set assumed_charset='iso-2022-jp:euc-jp:shift_jis:UTF-8'
+set charset='iso-2022-jp:euc-jp:shift_jis:UTF-8'
+set attach_charset='iso-2022-jp:euc-jp:shift_jis:UTF-8'
+set send_charset='iso-2022-jp:euc-jp:shift_jis:UTF-8'
+#set newsgroups_charset='iso-2022-jp:euc-jp:shift_jis:UTF-8'
