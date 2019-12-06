@@ -50,6 +50,8 @@ Plugin 'maksimr/vim-jsbeautify'
 Plugin 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+" ts
+Plugin 'leafgarland/typescript-vim'
 " java
 " *TODO* add me plugin!
 
@@ -186,7 +188,7 @@ let g:vim_markdown_toml_frontmatter     = 1
 
 " Disable manually
 " command: InstantMarkdownPreview
-let g:instant_markdown_autostart = 0
+"let g:instant_markdown_autostart = 0
 
 autocmd BufRead *.md set filetype=markdown
 
