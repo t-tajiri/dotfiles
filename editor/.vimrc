@@ -2,7 +2,7 @@ set shell=bash\ -i
 
 filetype off
 set nocompatible
-set rtp+=$HOME/.vim/bundle/vundle.vim
+set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 Plugin 'vundlevim/vundle.vim'
