@@ -39,3 +39,6 @@ export PATH=$PATH:$HOME/.cargo/bin
 export WASMTIME_HOME="$HOME/.wasmtime"
 export PATH="$WASMTIME_HOME/bin:$PATH"
 export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig/
+
+# win32yank
+export PATH=$PATH:$HOME/.local/bin
