@@ -34,3 +34,8 @@ export NVM_DIR="$HOME/.nvm"
 export JAVA_HOME=/usr/lib/jvm/jdk-13.0.2
 export PATH=$PATH:/usr/lib/jvm/jdk-13.0.2/bin
 
+# rust
+export PATH=$PATH:$HOME/.cargo/bin
+export WASMTIME_HOME="$HOME/.wasmtime"
+export PATH="$WASMTIME_HOME/bin:$PATH"
+export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig/
